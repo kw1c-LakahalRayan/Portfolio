@@ -1,0 +1,34 @@
+<!-- ProfielPagina.xaml -->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fitnessapp_thema9.View.ProfielPagina"
+             Title="Profiel">
+
+    <VerticalStackLayout Padding="20">
+        <Label Text="Profielgegevens" FontSize="24" HorizontalOptions="Center" />
+
+        <Label Text="Voornaam:" />
+        <Label x:Name="VoornaamLabel" FontSize="18" />
+
+        <Label Text="Achternaam:" />
+        <Label x:Name="AchternaamLabel" FontSize="18" />
+
+        <Label Text="Geboortedatum:" />
+        <Label x:Name="GeboortedatumLabel" FontSize="18" />
+
+        <Label Text="Leeftijd:" />
+        <Label x:Name="LeeftijdLabel" FontSize="18" />
+
+        <Label Text="Gewicht (kg):" />
+        <Label x:Name="GewichtLabel" FontSize="18" />
+
+        <Label Text="Lengte (cm):" />
+        <Label x:Name="LengteLabel" FontSize="18" />
+
+        <!-- Bewerk-knop -->
+        <Button Text="Bewerken"
+                FontSize="18"
+                HorizontalOptions="Center"
+                Clicked="OnBewerkenButtonClicked"/>
+    </VerticalStackLayout>
+</ContentPage>

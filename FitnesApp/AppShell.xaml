@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Fitnessapp_thema9.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Fitnessapp_thema9.View"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Fitnessapp_thema9">
+
+    <!-- FlyoutItem voor de Home-pagina -->
+    <FlyoutItem Title="Home">
+        <ShellContent Route="home" ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+    <!-- FlyoutItem voor de Activiteiten-pagina -->
+    <FlyoutItem Title="Activiteiten">
+        <ShellContent Route="activiteiten" ContentTemplate="{DataTemplate local:ActiviteitenPagina}" />
+    </FlyoutItem>
+    <!-- FlyoutItem voor de Profiel-pagina -->
+    <FlyoutItem Title="Profiel">
+        <ShellContent Route="Profiel" ContentTemplate="{DataTemplate local:ProfielPagina}"/>
+    </FlyoutItem>
+    <!-- FlyoutItem voor de BewerkenProfiel-pagina -->
+    <FlyoutItem Title="BewerkenProfiel">
+        <ShellContent Route="BewerkenProfiel" ContentTemplate="{DataTemplate local:BewerkenProfiel}"/>
+    </FlyoutItem>
+    <!-- FlyoutItem voor de Recepten-pagina -->
+    <FlyoutItem Title="Recepten">
+        <ShellContent Route="recepten" ContentTemplate="{DataTemplate local:ReceptenPagina}"/>
+    </FlyoutItem>
+    <!-- FlyoutItem voor de Opgeslagen Recepten-pagina -->
+    <FlyoutItem>
+        <ShellContent Route="OpgeslagenRecepten" ContentTemplate="{DataTemplate local:SavedRecipesPage}"/>
+    </FlyoutItem>
+</Shell>

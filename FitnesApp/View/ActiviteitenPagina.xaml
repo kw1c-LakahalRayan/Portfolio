@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fitnessapp_thema9.View.ActiviteitenPagina">
+    <VerticalStackLayout>
+        <Label 
+            Text="Mijn DagelijkseActiviteiten"
+            FontSize="24"
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"/><!--styling voor de label-->
+    </VerticalStackLayout>
+</ContentPage>

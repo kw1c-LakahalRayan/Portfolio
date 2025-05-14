@@ -1,0 +1,75 @@
+
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fitnessapp_thema9.View.ReceptenPagina"
+             Title="Recepten">
+
+    <VerticalStackLayout Padding="20">
+        <Label Text="Zoek recepten" FontSize="24" HorizontalOptions="Center" TextColor="DarkCyan"/>
+
+        <Entry x:Name="ZoekEntry" Placeholder="Zoek recepten..." TextColor="DarkCyan"/>
+        <Button Text="Zoeken" Clicked="OnSearchButtonClicked" BackgroundColor="DarkCyan" />
+
+        <Button Text="Opgeslagen Recepten" Clicked="OnSavedRecipesButtonClicked" BackgroundColor="DarkCyan"/>
+
+        <CollectionView x:Name="ReceptenCollectionView">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Padding="10" Margin="5">
+                        <StackLayout>
+                            <Label Text="{Binding Title}" FontSize="18" />
+                            <Button Text="Bekijk" CommandParameter="{Binding}" Clicked="OnViewRecipeButtonClicked"/>
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <HorizontalStackLayout
+                   VerticalOptions="End"
+                   Spacing="20"
+                   HorizontalOptions="Center">
+
+            <Frame
+                   CornerRadius="20"
+                   Padding="10"
+                   BackgroundColor="Cyan">
+                <ImageButton
+                       x:Name=" ActiviteitenButton "
+                       Source="dumbell.png"
+                       WidthRequest="70"
+                       HeightRequest="50"
+                       SemanticProperties.Hint="Open Dagelijkse Activiteiten">
+                </ImageButton>
+            </Frame>
+            <Frame
+                   CornerRadius="20"
+                   Padding="10"
+                   BackgroundColor="Cyan">
+                <ImageButton
+                       x:Name=" ReceptenButton "
+                       Source="eten_icon.png"
+                       WidthRequest="70"
+                       HeightRequest="50"
+                       SemanticProperties.Hint="Open recepten pagina">
+                </ImageButton>
+
+            </Frame>
+            <Frame
+                   CornerRadius="20"
+                   Padding="10"
+                   BackgroundColor="Cyan">
+                <ImageButton
+                       x:Name=" ProfielButton "
+                       Source="download.png"
+                       WidthRequest="70"
+                       HeightRequest="50"
+                       SemanticProperties.Hint="Open ProfielInstellingen">
+                </ImageButton>
+            </Frame>
+
+
+
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

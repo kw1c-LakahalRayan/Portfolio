@@ -1,0 +1,19 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fitnessapp_thema9.View.BewerkenProfiel"
+             Title="Profiel Bewerken">
+    <VerticalStackLayout Padding="20">
+        <Label Text="Voornaam:" />
+        <Entry x:Name="VoornaamEntry" />
+        <Label Text="Achternaam:" />
+        <Entry x:Name="AchternaamEntry" />
+        <Label Text="Geboortedatum:" />
+        <Entry x:Name="GeboortedatumEntry" Placeholder="dd-MM-yyyy" />
+        <Label Text="Gewicht (kg):" />
+        <Entry x:Name="GewichtEntry" Keyboard="Numeric" />
+        <Label Text="Lengte (cm):" />
+        <Entry x:Name="LengteEntry" Keyboard="Numeric" />
+        <Button Text="Opslaan" Clicked="OnSaveButtonClicked" />
+    </VerticalStackLayout>
+</ContentPage>
+    <!--in deze pagina worden er gegevens gewijzigd in de profiel-->
